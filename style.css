@@ -48,9 +48,11 @@ header h1 {
 
 .nav {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 20px;
-    padding: 110px;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-template-rows: repeat(4, auto);   /* 4 rows */
+    column-gap: 20px;
+    row-gap: 75px; 
+    padding: 80px;
     background: linear-gradient(dodgerblue, cyan);
     justify-items: center;
 }
