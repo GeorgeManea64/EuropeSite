@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    color: #000000;
+}
+
+header {
+    background:linear-gradient(to right, #002153, white, #CF0821);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    height: 400px;
+    width: 100%;
+    border-bottom: solid black 5px;
+}
+
+img {
+    height: 300px;
+    width: auto;
+    margin-top: -50px;
+}
+
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    color: #05003f;
+}
+
+.definition {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 30px;
+    background: linear-gradient(to right, #002153, white, #CF0821);
+    border-bottom: solid black 5px;
+}
+
+.definition img {
+    height: 400px;
+    width: auto;
+    border: 3px solid white;
+    border-radius: 10px;
+    transform: translateY(50px);
+}
+
+.definition-text {
+    max-width: 60%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.historical-moments {
+    background:linear-gradient(to right, #002153, white, #CF0821);
+    padding: 40px;
+    text-align: center;
+}
+
+.historical-moments h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.history-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    gap: 30px;
+}
+
+.history-section img {
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.history-section .text {
+    width: 55%;
+    text-align: left;
+}
+
+.history-section.even {
+    flex-direction: row;
+}
+
+.history-section.odd {
+    flex-direction: row-reverse;
+}
+
+.history-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.history-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}

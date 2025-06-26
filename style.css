@@ -3,10 +3,11 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: white;
+    color: #333;
 }
 
 header {
-    background-color: #00309A;
+    background-color: #003099;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,35 +27,52 @@ img {
 header h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 20px;
-    color: yellow;
+    color: #FFCD00;
 }
 
 .definition {
-    background: linear-gradient(to top, dodgerblue, #00309A);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 40px 20px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 30px;
+    background: linear-gradient(to top, dodgerblue, #003099);
     color: white;
     border-bottom: solid black 5px;
 }
 
-.definition p {
+.definition img {
+    height: 400px;
+    width: auto;
+    border: 3px solid white;
+    border-radius: 10px;
+    transform: translateY(25px);
+}
+
+.definition-text {
+    max-width: 60%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: larger;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 columns */
-    grid-template-rows: repeat(4, auto);   /* 4 rows */
+    grid-template-rows: repeat(2, auto);   /* 2 rows */
     column-gap: 20px;
     row-gap: 75px; 
     padding: 80px;
     background: linear-gradient(dodgerblue, cyan);
     justify-items: center;
+    border-bottom: solid black 5px;
+}
+
+.nav h1 {
+    grid-column: 1 / -1; /* Span full width of grid if inside */
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
 }
 
 .nav a img {
@@ -68,4 +86,19 @@ header h1 {
 .nav a img:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: linear-gradient(cyan, white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: auto;
+    border-bottom: solid black 5px;
+}
+
+footer p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
