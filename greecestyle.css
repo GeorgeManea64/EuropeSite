@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    color: #000000;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto; /* centers the entire container */
+}
+
+header {
+    background:linear-gradient(#055EB0, white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+
+img {
+    height: 300px;
+    width: auto;
+    margin-top: -50px;
+    transform: translateY(25px);
+}
+
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    color: #05003f;
+    transform: translateY(25px);
+}
+
+.wrapper {
+    background:linear-gradient(white, #055EB0, white, #055EB0);
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    border: solid black 5px;
+    margin: 0 auto;
+}
+
+.definition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    border-bottom: solid black 5px;
+}
+
+.definition img {
+    height: 300px;
+    width: auto;
+    border-radius: 12px;
+}
+
+.definition-text {
+    max-width: 50%;
+    font-family: Georgia, serif;
+    line-height: 1.6;
+}
+
+.historical-moments {
+    padding: 40px;
+    text-align: center;
+    border-bottom: solid black 5px;
+}
+
+.historical-moments h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.history-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.history-section img {
+    height: 300px;
+    width: auto;
+    border-radius: 12px;
+}
+
+.history-section .text {
+    max-width: 50%;
+    font-family: Georgia, serif;
+    line-height: 1.6;
+}
+
+.history-section.odd {
+  flex-direction: row; /* Image left, Text right */
+}
+
+.history-section.even {
+  flex-direction: row-reverse; /* Image right, Text left */
+}
+
+.tourist-attractions {
+    padding: 40px;
+    text-align: center;
+    border-bottom: solid 5px black;
+}
+
+.tourist-attractions h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.tourist-attractions-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.tourist-attractions-section img {
+    height: 300px;
+    width: auto;
+    border-radius: 12px;
+}
+
+.tourist-attractions-section .text {
+    max-width: 50%;
+    font-family: Georgia, serif;
+    line-height: 1.6;
+}
+
+.tourist-attractions-section.odd {
+  flex-direction: row; /* Image left, Text right */
+}
+
+.tourist-attractions-section.even {
+  flex-direction: row-reverse; /* Image right, Text left */
+}
+
+.nav {
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center;     /* Vertically center content (optional) */
+    padding: 80px;
+}
+
+.nav a {
+    text-decoration: none; /* Optional: remove underline */
+}
+
+.nav h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 0; /* Remove default bottom margin */
+    color: black;
+}
+
+footer {
+    background:linear-gradient(#055EB0, white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 100%; /* fill parent container (.container) */
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+footer p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
